@@ -23,7 +23,7 @@ public class Espectaculo {
     }
 
     public List<Funcion> getFunciones() {
-        return new ArrayList<>(funciones); // copia para proteger la lista interna
+        return new ArrayList<>(funciones);
     }
 
     @Override
