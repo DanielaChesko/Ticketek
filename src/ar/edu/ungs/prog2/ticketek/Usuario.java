@@ -49,7 +49,7 @@ public class Usuario {
     }
 
     public List<IEntrada> listarTodasLasEntradas() {
-        return new ArrayList<>(entradas); // copia como IEntrada
+        return new ArrayList<>(entradas);
     }
 
     public boolean anularEntrada(String nombreEspectaculo, int codigoEntrada) {
@@ -59,10 +59,6 @@ public class Usuario {
             }
         }
         return false;
-    }
-
-    public void consultarValorEntrada(String nombreEspectaculo) {
-        System.out.println("Consultar valor de entrada para " + nombreEspectaculo);
     }
 
     @Override

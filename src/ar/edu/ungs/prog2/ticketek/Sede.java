@@ -23,10 +23,8 @@ public abstract class Sede {
         return capacidadMaxima;
     }
 
-    // Método abstracto para que cada sede defina su tipo
     public abstract String getTipoSede();
 
-    // Método abstracto para calcular el precio real de una entrada según sede y sector
     public abstract double calcularPrecioEntrada(double precioBase, String sector, int asiento);
 
     @Override

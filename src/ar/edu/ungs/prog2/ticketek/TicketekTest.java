@@ -5,7 +5,6 @@ import org.junit.runners.MethodSorters;
 
 import static org.junit.Assert.*;
 
-import java.util.LinkedList;
 import java.util.List;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)

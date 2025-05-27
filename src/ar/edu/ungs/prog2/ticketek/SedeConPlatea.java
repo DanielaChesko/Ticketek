@@ -20,7 +20,7 @@ public abstract class SedeConPlatea extends Sede {
     private final double aumentoBaja = 0.50;
     private final double aumentoAlta = 0.0;
 
-    // Asientos por fila por sector (extraído del enunciado)
+    // Asientos por fila por sector
     private final int asientosPorFilaVip = 20;
     private final int asientosPorFilaComun = 25;
     private final int asientosPorFilaBaja = 25;

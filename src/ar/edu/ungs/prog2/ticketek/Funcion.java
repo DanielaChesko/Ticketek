@@ -5,10 +5,10 @@ import java.time.format.DateTimeFormatter;
 
 public class Funcion {
     private LocalDate fecha;
-    private double precioBase = 30000.0;
+    private int precioBase = 30000;
     private Sede sede;
 
-    public Funcion(String fechaStr, Sede sede, double precioBase) {
+    public Funcion(String fechaStr, Sede sede, int precioBase) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         this.fecha = LocalDate.parse(fechaStr, formatter);
         this.sede = sede;

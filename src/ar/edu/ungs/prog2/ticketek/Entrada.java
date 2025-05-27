@@ -8,9 +8,9 @@ public class Entrada implements IEntrada {
     private int codigoEspectaculo;
     private String nombreEspectaculo;
     private String nombreSector;
-    private int ubicacion; // número de asiento (si aplica)
+    private int ubicacion; // numero de asiento (si aplica)
     private double precio;
-    private String fecha; // en formato dd/MM/yyyy
+    private String fecha; // en formato dd/mm/yyyy
     private String nombreUsuario;
     private String apellidoUsuario;
     private boolean anulada;

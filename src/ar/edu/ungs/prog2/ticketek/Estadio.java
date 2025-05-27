@@ -4,7 +4,7 @@ public class Estadio extends Sede {
 
     private static String sector = "Campo";
     private static int capacidadMax = 1000;
-    private static double precioFijo = 25000.0;
+    private static int precioFijo = 25000;
 
     public Estadio(String nombre, String direccion) {
         super(nombre, direccion, capacidadMax);

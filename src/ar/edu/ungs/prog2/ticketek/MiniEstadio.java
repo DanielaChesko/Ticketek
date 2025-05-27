@@ -4,7 +4,7 @@ public class MiniEstadio extends SedeConPlatea {
 
     private int puestosDeComida;
     private int puestosDeMerchandising;
-    private static final double CONSUMICION_FIJA = 15000.0;
+    private static int consumisionFija = 15000;
 
     public MiniEstadio(String nombre, String direccion, int puestosDeComida, int puestosDeMerchandising) {
         // Capacidad total: misma que Teatro = 650 (sumatoria de sectores)
@@ -24,12 +24,12 @@ public class MiniEstadio extends SedeConPlatea {
 
     @Override
     public double calcularPrecioEntrada(double precioBase, String sector, int asiento) {
-        // Precio según SedeConPlatea + valor fijo de consumición
+        // Precio según SedeConPlatea + valor fijo de consumicion
         double precioSinConsumicion = super.calcularPrecioEntrada(precioBase, sector, asiento);
-        return precioSinConsumicion + CONSUMICION_FIJA;
+        return precioSinConsumicion + consumisionFija;
     }
 
     public double getValorConsumicion() {
-        return CONSUMICION_FIJA;
+        return consumisionFija;
     }
 }
